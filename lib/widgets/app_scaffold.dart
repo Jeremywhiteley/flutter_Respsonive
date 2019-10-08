@@ -14,7 +14,7 @@ class AppScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bool displayMobileLayout = MediaQuery.of(context).size.width < 600;
+    final bool displayMobileLayout = MediaQuery.of(context).size.width <= 800;
     return Row(
       children: [
         if (!displayMobileLayout)
